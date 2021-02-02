@@ -8,7 +8,7 @@ const userSlice = createSlice({
     initialState: {
         isSignedIn: false,
         userData: null,
-        searchInput: "tech",
+        searchInput: "apple",
         blogData: null
     },
     // So we are using 4 reducers one for each key in our object

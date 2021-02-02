@@ -10,21 +10,23 @@ import {
 import "../styling/home.css";
 
 const Homepage = () => {
+    // select the signedIn reducer we created and imported from userSlice
   const isSignedIn = useSelector(selectSignedIn);
-
+// the user dispatch is receiving the payload or the data from the navbar which helps it change the state of the 'setSignedIn' && 'setUserData'
   const dispatch = useDispatch();
   const login = (response) => {
     console.log(response);
     dispatch(setSignedIn(true));
+    // this sets the payload to profileObj this is googles naming convention
     dispatch(setUserData(response.profileObj));
   };
-
+// If the user is signed in the inline display will ne none or else it would leave it blank. Then it will check to see if the user is NOT signed in hes not it will show the following login screen with the ability to sign in with google OAuth.
   return (
     <div className="home__page" style={{ display: isSignedIn ? "none" : "" }}>
       {!isSignedIn ? (
         <div className="login__message">
           <h2>📰</h2>
-          <h1>Where the Elite get their News!</h1>
+          <h1>CarlosReads The News Here!</h1>
           <p>
             We provide high quality online resources for reading blogs and News Articles. Just sign
             up and start reading some quality content today.
