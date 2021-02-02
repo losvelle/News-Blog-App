@@ -1,3 +1,39 @@
+# CarlosReads - Blog app
+Simple app that provides relevant articles, news, and blogs based on the users search.
+
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Setup](#setup)
+
+## General info
+CarlosReads allows the user to search any topics, and they will recieve up to date relevant articles on that topic from all over the internet, even in different languages.
+	
+## Technologies
+Project is created with:
+* Nodejs Version: 14.15.1
+* React Version: 17.0.1
+* @material.ui/core Version: 4.11.3
+* axios Version: 0.21.1
+* react-google-login Version: 5.2.2
+* react-redux Version: 7.2.2
+
+	
+## Setup
+To run this project, install it locally using npm:
+
+```
+$ cd ../Documents
+$ npm install npm
+$ npm install react
+$ npm install @material.ui/core
+$ npm install axios
+$ npm install react-google-login
+$ npm install react-redux
+$ npm start
+```
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
