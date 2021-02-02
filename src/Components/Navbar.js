@@ -12,8 +12,11 @@ import {
 
 import "../styling/navbar.css";
 
+
+
+
 const Navbar = () => {
-// user type in input. This hook is passing '' so it should show the placeholder value on teh front end.
+// user type in input. This hook is passing '' so it should show the placeholder value on the front end.
   const [inputValue, setInputValue] = useState("");
   const isSignedIn = useSelector(selectSignedIn);
 // this will target the userData in the Homepage
@@ -60,7 +63,7 @@ const Navbar = () => {
       {/* this will return the firstname of the user */}
           <h1 className="signedIn">{userData?.givenName}</h1>
           <GoogleLogout
-            clientId="57529085775-fk8rn8hren1q8o5ja2idq4m7hug5aong.apps.googleusercontent.com"
+            clientId="1016698445943-3qi168k97o9vudt73k095ako9uagql6s.apps.googleusercontent.com"
             render={(renderProps) => (
               <button
                 onClick={renderProps.onClick}

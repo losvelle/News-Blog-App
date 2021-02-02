@@ -34,8 +34,7 @@ const Homepage = () => {
 {/* importing the google login authentication */}
 {/* Render a custom button from google as props line 39 disables the button when the page is first rendered */}
           <GoogleLogin
-            clientId="57529085775-fk8rn8hren1q8o5ja2idq4m7hug5aong.apps.googleusercontent.com"
-
+            clientId="1016698445943-3qi168k97o9vudt73k095ako9uagql6s.apps.googleusercontent.com"
             render={(renderProps) => (
               <button
                 onClick={renderProps.onClick}
@@ -50,7 +49,7 @@ const Homepage = () => {
             isSignedIn={true}
             cookiePolicy={"single_host_origin"}
           />
-      {/* After google has allowed a user to log in successfully or if we failed to login. We run a function called login which runs the console.log function that shows the response from google in line 16. Then it changes isSignedIn to true and stores this as a cookie in th local storage */}
+      {/* After google has allowed a user to log in successfully or if we failed to login. We run a function called login which runs the console.log function that shows the response from google in line 17. Then it changes isSignedIn to true and stores this as a cookie in the local storage */}
         </div>
       ) : (
         ""

@@ -33,7 +33,7 @@ const Blogs = () => {
       <div className="blogs">
         {blogs?.articles?.map((blog) => (
           <a className="blog" target="_blank" href={blog.url}>
-            <img src={blog.image} />
+            <img src={blog.image} alt=""/>
             <div>
               <h3 className="sourceName">
                 <span>{blog.source.name}</span>
@@ -45,7 +45,7 @@ const Blogs = () => {
           </a>
         ))}
 
-        {blogs?.totalArticles == 0 && (
+        {blogs?.totalArticles === 0 && (
           <h1 className="no__blogs">
             No blogs available 😞. Search something else to read blogs on the
             greatest platform.

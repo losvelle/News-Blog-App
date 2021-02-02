@@ -6,6 +6,6 @@ import userReducer from "../Features/userSlice";
 // here we are making the reducer we created as a parameter of configureStore
 export default configureStore({
     reducer: {
-        user: userReducer
-    }
+        user: userReducer,
+    },
 });
