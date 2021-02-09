@@ -7,8 +7,8 @@ Simple app that provides relevant articles, news, and blogs based on the users s
 * [Setup](#setup)
 
 ## General info
-CarlosReads allows the user to search any topics, and they will recieve up to date relevant articles on that topic from all over the internet, even in different languages.
-	
+CarlosReads allows the user to search any topics, and they will receive up to date relevant articles on that topic from all over the internet, even in different languages.
+
 ## Technologies
 Project is created with:
 * Nodejs Version: 14.15.1
@@ -18,7 +18,7 @@ Project is created with:
 * react-google-login Version: 5.2.2
 * react-redux Version: 7.2.2
 
-	
+
 ## Setup
 To run this project, install it locally using npm:
 
