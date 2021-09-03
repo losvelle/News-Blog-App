@@ -28,13 +28,21 @@ const Navbar = () => {
     dispatch(setSignedIn(false));
     dispatch(setUserData(null));
   };
+
+// making it possible to search when the enter key is pressed
+  const handleKeyPress = e => {
+      if(e.key === 'Enter'){
+          handleClick(e)
+      }
+  }
 // event listener for when the user clicks on the search button.
   const handleClick = (e) => {
     e.preventDefault();
     dispatch(setInput(inputValue));
   };
 
-// this creates the navbar and gives it an <h1> to pass as a logo. Then checks to see if user is signedin and runs the search bar.
+// this creates the navbar and gives it an <h1> to pass as a logo.
+// Then checks to see if user is signedin and runs the search bar.
   return (
     <div className="navbar">
       <h1 className="navbar__header">CarlosReads 💬</h1>
@@ -44,6 +52,7 @@ const Navbar = () => {
             className="search"
             placeholder="Search CarlosReads"
             value={inputValue}
+            onKeyPress={handleKeyPress}
             onChange={(e) => setInputValue(e.target.value)}
           />
           <button className="submit" onClick={handleClick}>
@@ -62,6 +71,7 @@ const Navbar = () => {
           />
       {/* this will return the firstname of the user */}
           <h1 className="signedIn">{userData?.givenName}</h1>
+          {/* Rendering a log out component with the props */}
           <GoogleLogout
             clientId="1016698445943-3qi168k97o9vudt73k095ako9uagql6s.apps.googleusercontent.com"
             render={(renderProps) => (
